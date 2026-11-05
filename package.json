@@ -1,0 +1,16 @@
+{
+  "name": "vue-nest-postgres-demo",
+  "version": "1.0.0",
+  "description": "Fullstack Demo: Vue 3 + Vuetify + NestJS + Docker PostgreSQL",
+  "scripts": {
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:logs": "docker compose logs -f postgres",
+    "backend:dev": "npm --prefix backend run start:dev",
+    "backend:build": "npm --prefix backend run build",
+    "backend:start": "npm --prefix backend run start:prod",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
+  }
+}
+
