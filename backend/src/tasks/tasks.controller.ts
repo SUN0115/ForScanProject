@@ -8,9 +8,11 @@ import {
   Delete,
   ParseIntPipe,
 } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { TasksService } from './tasks.service.js';
 import { CreateTaskDto, UpdateTaskDto } from './dto/task.dto.js';
 
+@ApiTags('tasks')
 @Controller('tasks')
 export class TasksController {
   constructor(private readonly tasksService: TasksService) {}
